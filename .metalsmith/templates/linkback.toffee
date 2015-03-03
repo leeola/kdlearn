@@ -1,8 +1,7 @@
 <ul class="koding-linkback">
-  <li class="signup">
-    <a href="https://koding.com/Register">Sign Up Now</a>
-  </li>
-  <li class="signin">
-    <a href="https://koding.com/Login">Login</a>
+  <li class="large">
+    <a
+      href="https://koding.com?utm_source=KodingUniversity&utm_content=LoginButton&utm_campaign=growth"
+    >Fire up your Koding VM and try this now</a>
   </li>
 </ul>

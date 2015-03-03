@@ -9,7 +9,15 @@ template: page.toffee
 
 # PrestaShop Installation for Beginners
 
-In this article we’ll go over the basics of setting up PrestaShop. Follow along, or [Try the Koding Demo](https://koding.com/Develop/Teamwork?import=http://www.prestashop.com/download/prestashop_1.5.6.1.zip) right now!
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Prestashop using just one command:
+
+```
+kpm install prestashop
+```
+
+***
+
+In this article we’ll go over the basics of setting up PrestaShop.
 
 ## About PrestaShop
 
@@ -19,20 +27,31 @@ There are a lot of e-commerce solutions, but a there is one that stands out, Pr
 
 Luckily you can do that on [Koding](https://koding.com) with ease. So how do you setup a PrestaShop shop on [Koding](https://koding.com)? You just follow the next few simple steps and you're good to go.
 
-Want to skip a few steps? Jump directly to the PrestaShop installation process using this [link](https://koding.com/Develop/Teamwork?import=http://www.prestashop.com/download/prestashop_1.5.6.1.zip)!
-
 ## Setting up PrestaShop
 
 ### Step 1.
 
-Open up a Terminal window in [Koding](https://koding.com) and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.5.6.1 [code] cd Web; wget http://www.prestashop.com/download/prestashop_1.5.6.1.zip; [/code]
+Open up a Terminal window in [Koding](https://koding.com) and type the following commands to get you started. We navigate to our Web folder and then we try to get the latest version of PrestaShop available on their website. In this case PrestaShop 1.6.0.13
+```
+cd Web;
+wget http://www.prestashop.com/download/prestashop_1.6.0.13.zip;
+```
 
 ### Step 2.
 
-We unzip the file. [code]unzip prestashop_1.5.6.1.zip[/code]
+We unzip the file.
+```
+unzip prestashop_1.6.0.13.zip
+```
 
 ### Step 3.
 
-We can now head over to the setup page and begin the installation procedure. Our link is: [code]http://[your_Koding_username].kd.io/prestashop[/code] All we have to do now is to fill in the required fields to set up the shop.
+We can now head over to the setup page and begin the installation
+procedure. Our link is:
+```
+http://[your_vm_hostname].[your_Koding_username].koding.io/prestashop
+```
+All we have to do now is to fill in the required fields to set up the
+shop.
 
 And that's it, three simple steps to set up your e-commerce solution. As always, more Quick Tips and beginner friendly guides from [Koding](https://koding.com) coming soon, so stay tuned!

@@ -9,7 +9,15 @@ template: page.toffee
 
 # Codeigniter Installation for Beginners
 
-In this article we will go over installing Codeigniter for beginners. Follow along, or [Try the Koding Demo](https://koding.com/Develop/Teamwork?import=http://tinyurl.com/nvq35q2) right now! 
+Before you continue reading this guide why not try a more easy way, using the [Koding Package Manager (kpm)](http://learn.koding.com/guides/getting-started-kpm/) and install Codeigniter using just one command:
+
+```
+kpm install codeigniter
+```
+
+***
+
+In this article we will go over installing Codeigniter for beginners.
 
 ## What is Codeigniter?
 
@@ -17,10 +25,40 @@ Codeigniter may be old hat to some, but the tried and true frameworks tend to ho
 
 ## So how do i get started with Codeigniter?
 
-In the following video, we’ll go over the basic process of running Codeigniter on [Koding](https://koding.com). 
+Before you begin make sure you are in your Web folder:
 
-As you can see, setting up CI is a pretty simple process. The only trouble is ensuring that your LAMP stack is up and running properly, but thanks to [Koding](https://koding.com) this process was made easy. Koding comes with Apache by default, so Codeigniter _just works_. On top of that, we were able to get started with Codeigniter entirely in our browser. No downloading and installing LAMP stacks to our localhost required. 
+```
+cd Web
+```
 
-## Can it get easier?
+First you will need to download the latest version of Codeigniter using the following command, in your Terminal:
 
-Why yes, it can! With Teamwork we can use the [Teamwork Import](https://koding.com/Develop/Teamwork?import=http://tinyurl.com/nvq35q2) to import the Codeigniter download immediately. What you are left with is a Codeigniter directory structure which you can immediately access in your browser to develop on. Yes, you read that right, click the link and bam, Codeigniter is up and running. We have more beginner friendly articles and videos coming in the near future, stay tuned!
+```
+wget https://github.com/bcit-ci/CodeIgniter/archive/2.2-stable.zip
+```
+
+After that you'll need to unzip the file using the command:
+
+```
+unzip 2.2-stable.zip
+```
+
+Next we need to rename the folder to a more friendly one:
+
+```
+mv CodeIgniter-2.2-stable codeigniter
+```
+
+You will now be able to access Codeigniter by following a similar URL:
+
+```
+http://KODING_USERNAME.koding.io/codeigniter
+```
+
+Find out more about your VM hostname [here](http://learn.koding.com/faq/vm-hostname/).
+
+Koding comes with Apache by default, so Codeigniter _just works_.
+
+As you can see, setting up CodeIgniter is a pretty simple process.
+
+If you encounter any issues or have any questions please drop an email [here](mailto:support@koding.com).

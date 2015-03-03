@@ -2,3 +2,6 @@
 .metalsmith/build
 npm-debug.log
 node_modules
+/.agignore
+secret_config.json
+*.pem

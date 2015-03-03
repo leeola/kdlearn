@@ -1,0 +1,310 @@
+/* Landscape phones and down */
+@media only screen and (max-width: 480px) {
+	body {
+		background-color: #5c656d !important;
+		background-image: none !important;
+	}
+	nav {
+		.container {
+			.topSearchButton {
+				margin-right: 55px;
+				padding: 5px;
+			}
+			.toplinks {
+				margin: 0;
+				padding: 0 12px;
+				display: none;
+			}
+			#menu {
+				padding-top: 20px;
+				li {
+					width: 50%;
+					display: inline-block;
+					margin-right: 0;
+					padding-bottom: 10px;
+				}
+				#mobile-menu {
+					display: block;
+				}
+			}
+		}
+		.topSearchBox {
+			position: absolute;
+			top: 70px;
+			left: 50%;
+			width: 280px;
+			margin-left: -140px;
+			z-index: 10;
+			input {
+				padding: 5px 10px;
+			}
+		}
+	}
+	header {
+		nav {
+			.topSearchBox {
+				width: 280px;
+				margin-left: -140px;
+				z-index: 10;
+				input {
+					padding: 5px 10px;
+				}
+			}
+		}
+		>.container {
+			width: 280px;
+		}
+	}
+	.page {
+		>.container {
+			width: 280px;
+			.video-shadow {
+				margin: 80px 0 50px;
+				height: 120px;
+				#shadow-right,
+				#shadow-left {
+					display: none;
+				}
+				.main {
+					width: 280px;
+					height: 167px;
+					.youtube-mini .youtube-play {
+						top: 30%;
+						right: 35%;
+					}
+				}
+			}
+		}
+	}
+	section {
+		padding: 1em 0;
+		>.container {
+			width: 280px;
+			#left-nav {
+				width: 100%;
+				margin: 0;
+				float: none;
+				+.docs-content {
+					margin-top: 20px;
+					margin-left: 0;
+				}
+				a {
+					font-size: 1.2em;
+				}
+			}
+			.docs-content {
+				img {
+					max-width: 240px;
+				}
+				.tag-list {
+					li {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	.guides-intro {
+		margin-bottom: 30px;
+		p {
+			width: 280px;
+		}
+	}
+	#page-guides,
+	#authors-page {
+		>ul {
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+			margin-top: 0;
+			font-size: 1em;
+		}
+	}
+	.listing #page-videos ul li {
+		display: block;
+		width: 240px;
+		padding: 10px 0 30px 0;
+		margin: 0 20px;
+	}
+	.guide-footer {
+	    height: auto !important;
+	}
+	.guide-button {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	.rrssb-buttons {
+		width: 280px;
+		height: auto;
+	}
+	#disqus_thread {
+	    margin-bottom: -205px;
+	    &:after {
+	        height: 230px !important;
+	    }
+	}
+	footer.main-footer {
+        z-index: 20;
+        position: relative;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 480px) and (max-width: 768px) { 
+	body {
+		background-color: #5c656d !important;
+		background-image: none !important;
+	}
+	nav {
+		.container {
+			.topSearchButton {
+				margin-right: 55px;
+				padding: 5px;
+			}
+			.toplinks {
+				margin: 0;
+				padding: 0 12px;
+				display: none;
+			}
+			#menu {
+				padding-top: 20px;
+				width: 100%;
+				li {
+					width: 50%;
+					display: inline-block;
+					margin-right: 0;
+					padding-bottom: 10px;
+				}
+				#mobile-menu {
+					display: block;
+				}
+			}
+		}
+		.topSearchBox {
+			position: absolute;
+			top: 70px;
+			left: 50%;
+			width: 440px;
+			margin-left: -220px;
+			z-index: 10;
+			input {
+				padding: 5px 10px;
+			}
+		}
+	}
+	header {
+		nav {
+			.topSearchBox {
+				width: 440px;
+				margin-left: -220px;
+				z-index: 10;
+				input {
+					padding: 5px 10px;
+				}
+			}
+		}
+		>.container {
+			width: 400px;
+		}
+	}
+	.page {
+		>.container {
+			width: 400px;
+			.video-shadow {
+				margin: 80px 0 50px;
+				height: 200px;
+				#shadow-right,
+				#shadow-left {
+					display: none;
+				}
+				.main {
+					width: 400px;
+					height: 239px;
+					.youtube-mini .youtube-play {
+						top: 30%;
+						right: 35%;
+					}
+				}
+			}
+		}
+	}
+	section {
+		padding: 1em 0;
+		>.container {
+			width: 400px;
+			#left-nav {
+				width: 100%;
+				margin: 0;
+				float: none;
+				+.docs-content {
+					margin-top: 20px;
+					margin-left: 0;
+				}
+				a {
+					font-size: 1.2em;
+				}
+			}
+			.docs-content {
+				img {
+					max-width: 240px;
+				}
+				.tag-list {
+					li {
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+	.guides-intro {
+		margin-bottom: 30px;
+		p {
+			width: 400px;
+		}
+	}
+	#page-guides,
+	#authors-page {
+		>ul {
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+			margin-top: 0;
+			font-size: 1em;
+		}
+	}
+	.listing #page-videos ul li {
+		width: 190px;
+		padding: 10px 0 30px;
+		margin: 0 5px;
+	}
+	.guide-footer {
+	    height: auto !important;
+	}
+	.guide-button {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	.rrssb-buttons {
+		width: 400px;
+		height: auto;
+	}
+	#disqus_thread {
+	    margin-bottom: -180px;
+	    &:after {
+	        height: 230px !important;
+	    }
+	}
+	footer.main-footer {
+        z-index: 20;
+        position: relative;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 940px) {
+
+
+
+}

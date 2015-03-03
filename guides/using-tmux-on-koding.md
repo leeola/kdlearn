@@ -1,10 +1,8 @@
 ---
 title: Using Tmux on Koding
 author: Team Koding
-date: 2014-02-13
+date: 2014-05-13
 categories: [koding, tmux]
-
-template: page.toffee
 ---
 
 # Using Tmux on Koding
@@ -21,7 +19,9 @@ Well, Koding uses GNU Screen to help reconnect your Terminal sessions after conn
 
 The solution is quite simple, rebind your Tmux Prefix key. This can be done by creating a `~/.tmux.conf` file and placing the following command into it:
 
-`set-option -g prefix C-a`
+```
+set-option -g prefix C-a
+```
 
 Where `C-a` is Control _key_. This sets it to Control-a, a popular alternative for Tmux users _(and the traditional Screen PREFIX)_. You can of course bind it to whatever you want. Once you have your PREFIX rebound, killall tmux instances and reopen, and it will run just like you expect.. just remember to use Control-a as your PREFIX :)
 

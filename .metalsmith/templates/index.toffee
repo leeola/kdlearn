@@ -2,9 +2,15 @@
 #{partial 'header.toffee'}
 
 {#
-printVideo = (file) ->
+printVideo = (filename) ->
+  if typeof filename is 'string'
+    file = files[filename]
+  else
+    file = filename
+
   if not file?
-    throw new Error 'func `printVideo()` requires file object.'
+    return console.log "In func `printVideo(filename)`,
+      '#{filename}' does not exist."
   if not file.videoId?
     throw new Error 'Video ID Required for func `printVideo()`'
   # Reference name for sanity sake
@@ -28,25 +34,25 @@ printVideo = (file) ->
 
 <div class="fancy-youtube-highlight">
   <div class="video-shadow">
-    <img src="http://img.youtube.com/vi/VK8xjRFoJ0k/maxresdefault.jpg" id="shadow-left" />
+    <img src="http://img.youtube.com/vi/1579S_7R6EQ/maxresdefault.jpg" id="shadow-left" />
     <div class="main">
-      <a slug="foo" 
+      <a slug="intro"
         rel="videos" class="youtube-mini fancybox.iframe"
-        href="//www.youtube.com/v/5E85g_ddV3A?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
-        <img src="http://img.youtube.com/vi/5E85g_ddV3A/maxresdefault.jpg" />
+        href="//www.youtube.com/v/MZOpD8mdFVc?autoplay=1&rel=0&controls=0&showinfo=0&modestbranding=1">
+        <img src="http://img.youtube.com/vi/MZOpD8mdFVc/maxresdefault.jpg" />
         <span class="youtube-play fa fa-play-circle"></span>
       </a>
     </div>
-    <img src="http://img.youtube.com/vi/lOKIbN40NMQ/maxresdefault.jpg" id="shadow-right" />
+    <img src="http://img.youtube.com/vi/77P1vd4oFok/maxresdefault.jpg" id="shadow-right" />
   </div>
   <div class="title">
     Koding Introduction
   </div>
   <ul>
-  {# printVideo files['guides/social/index.html'] #}
-  {# printVideo files['guides/your-first-file/index.html'] #}
-  {# printVideo files['guides/the-terminal/index.html'] #}
-  {# printVideo files['guides/get-help-with-teamwork/index.html'] #}
+  {## printVideo 'guides/social/index.html' ##}
+  {## printVideo 'guides/your-first-file/index.html' ##}
+  {## printVideo 'guides/the-terminal/index.html' ##}
+  {## printVideo 'guides/get-help-with-teamwork/index.html' ##}
   </ul>
 </div>
 

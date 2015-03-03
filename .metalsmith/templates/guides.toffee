@@ -1,4 +1,4 @@
-#{partial 'head.toffee'}
+#{partial 'head.toffee', title: 'Guides'}
 #{partial 'topnav.toffee'}
 <section><div class="container">
 
@@ -17,9 +17,13 @@ if paginate.current is 0 {:
 
 <div class="docs-content" id="page-guides">
   <ul>
-  {# for tagName of tags {:
-    <li>#{partial 'taglist.toffee', tagName: tagName}</li>
-  :} #}
+  {#
+  for tagKey, t of tagsByUnique
+    continue if t.length is 0
+    {:
+    <li>#{partial 'taglist.toffee', tags: tagsByUnique, tagKey: tagKey}</li>
+    :}
+  #}
   </ul>
 </div>
 </div></section>
