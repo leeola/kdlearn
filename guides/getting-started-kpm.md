@@ -1,9 +1,10 @@
 ---
+fmtype: guide
+template: guide.tmpl
 title: Getting started with the Koding Package Manager
 author: Team Koding
 date: 2014-11-17
 categories: [koding]
-template: page.toffee
 ---
 
 # What is Koding Package Manager?
